@@ -6,7 +6,7 @@ const userRoutes = require("./routes/userRoutes");
 const blogRoutes = require("./routes/blogRoutes");
 const app = express();
 corsOptions = {
-  origin: "https://blog-app-frontend-roan.vercel.app/",
+  origin: "https://blog-app-frontend-roan.vercel.app",
   credentials: true,
   optionsSuccessStatus: 200,
 };
