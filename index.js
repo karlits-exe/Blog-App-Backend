@@ -5,8 +5,12 @@ require("dotenv").config();
 const userRoutes = require("./routes/userRoutes");
 const blogRoutes = require("./routes/blogRoutes");
 const app = express();
-
-app.use(cors());
+corsOptions = {
+  origin: "https://blog-app-frontend-roan.vercel.app/",
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use(express.json());
 
 
